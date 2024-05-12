@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <title>Chi tiết sản phẩm</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+        </div>
+
+        <!-- !CONTENT---------------- -->
+        <div class="body-page">
+            <div class="colLeft">
+                <!-- ! CỘT SHOW ẢNH DETAIL CỦA SẢN PHẨM: -->
+                <button class="imgMain btn-img">
+                    <img style="width: 100%;height: 100%;object-fit: cover;" id="itemMain" src="../images/item3.jpg"
+                        alt="">
+                </button>
+                <div class="listImg">
+                    <button class="itemImg btn-img"><img style="width: 100%;height: 100%;object-fit: cover;"
+                            class="imgSlider" src="../images/imgMain.webp" alt=""></button>
+                    <button class="itemImg btn-img"><img style="width: 100%;height: 100%;object-fit: cover;"
+                            class="imgSlider" src="../images/item1.jpg" alt=""></button>
+                    <button class="itemImg btn-img"><img style="width: 100%;height: 100%;object-fit: cover;"
+                            class="imgSlider" src="../images/item2.jpg" alt=""></button>
+                    <button class="itemImg btn-img"><img style="width: 100%;height: 100%;object-fit: cover;"
+                            class="imgSlider" src="../images/item3.jpg" alt=""></button>
+                    <button class="itemImg btn-img"><img style="width: 100%;height: 100%;object-fit: cover;"
+                            class="imgSlider" src="../images/item4.jpg" alt=""></button>
+                    <button class="itemImg btn-img"><img style="width: 100%;height: 100%;object-fit: cover;"
+                            class="imgSlider" src="../images/item5.jpg" alt=""></button>
+                </div>
+            </div>
+
+            <!-- ! CỘT THÔNG TIN CỤ THỂ VỀ SẢN PHẨM -->
+            <div class="colRight">
+                <div class="contentProduct">
+                    <div class="headerProduct">
+                        <div class="product-rating" id="productRating">
+                            <span class="valStar" data-rating="1">&#9733;</span>
+                            <span class="valStar" data-rating="2">&#9733;</span>
+                            <span class="valStar" data-rating="3">&#9733;</span>
+                            <span class="valStar" data-rating="4">&#9733;</span>
+                            <span class="valStar" data-rating="5">&#9733;</span>
+                            <span id="rating" data-value="">3</span>
+                            <span id="user-cmt">(? đánh giá từ người dùng)</span>
+                        </div>
+                        <h3 class="nameProduct">
+                            Màn hình ASUS ROG Strix XG309CM 30" IPS 220Hz 1ms G-Sync HDR10
+                        </h3>
+                    </div>
+                    <div class="infoProduct">
+                        <div class="statusProduct">
+                            <span style="color: #5F6C72; font-size: 16px;">Tình trạng: </span>
+                            <span style="color: #2DB224; font-size: 18px; font-weight: 600;" id="inStock">Còn
+                                hàng</span>
+                        </div>
+                        <div class="categoryProduct">
+                            <span style="color: #5F6C72; font-size: 16px;">Phân loại: </span>
+                            <span style="color: black; font-size: 18px; font-weight: 600;" id="categoryProd">Màn hình
+                                PC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="priceProduct">
+                    <span id="finalPrice">3.4000.000đ</span>
+                    <span id="initPrice">4.200.200đ</span>
+                    <span id="valDisc">20% OFF</span>
+                </div>
+                <div class="space" style="width: 100%;height: 1px;background-color: #E4E7E9;"></div>
+                <form class="formSelect">
+                    <div class="selectColor">
+                        <label>Chọn màu:</label>
+                        <div class="listColor">
+                            <div class="colorSelect">
+                                <input type="radio" value="red" name="color" class="pickColor" id="pickRed">
+                                <label for="pickRed">Đỏ</label>
+                            </div>
+                            <div class="colorSelect">
+                                <input type="radio" value="black" name="color" class="pickColor" id="pickBlack">
+                                <label for="pickBlack">Đen</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selectSize">
+                        <label for="pickSize">Chọn kích thước: </label>
+                        <select name="sizeProduct" id="pickSize">
+                            <option value="27inch">27inch</option>
+                            <option value="24inch">24inch</option>
+                            <option value="32inch">32inch</option>
+                        </select>
+                    </div>
+                </form>
+                <div class="checkOut">
+                    <input type="number" name="countProduct" value="1" min="1">
+                    <button class="btn-cart"><span>Thêm vào giỏ hàng</span> <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                    <button class="btn-pay">Mua ngay</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ! TAB MÔ TẢ SẢN PHẨM +  COMMENT CỦA NGƯỜI DÙNG -->
+        <div class="Desc-comment">
+            <div class="listMenu">
+                <button value="0" class="btn-dir default">Mô tả</button>
+                <button value="1" class="btn-dir">Thông số kỹ thuật</button>
+                <button value="2" class="btn-dir">Review</button>
+            </div>
+            <div class="listContent">
+                <div data-value="0" class="itemDesc content-desc">
+                    <div class="desc-product">
+                        <h3 style="text-transform: uppercase;">Mô tả sản phẩm</h3>
+                        <p class="desc1">
+                            Màn hình chuyên game ASUS ROG Strix XG309CM được thiết kế đặc biệt dựa trên nhu cầu của game
+                            thủ chuyên nghiệp, lấy game thủ làm trọng tâm để tạo nên một màn hình máy tính chất lượng.
+                            Hãy cùng xem qua siêu phẩm này để xem nó có gì khiến người dùng đứng ngồi không yên nhé.
+                            <!-- <div class="space-desc" style="height: 12px;width: 100%;"></div>
+                        Màn hình ASUS ROG Strix XG309CM sở hữu màn hình kích thước lớn, lên đến 30 inch. Độ phân giải
+                        Full HD tiêu chuẩn dưới tấm nền Fast IPS giúp tái tạo hình ảnh chân thật và sống động, bạn sẽ
+                        được trải nghiệm hình ảnh rõ nét đến từng chi tiết... -->
+                        </p>
+                    </div>
+                    <div class="info-promotion">
+                        <h3 style="text-transform: uppercase;">Khuyến mãi</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-snowflake"></i>Miễn phí 1 năm bảo hành</li>
+                            <li><i class="fa-solid fa-snowflake"></i>Ưu đãi vận chuyển nội thành</li>
+                            <li><i class="fa-solid fa-snowflake"></i>Hoàn tiền 100% nếu sản phẩm gặp lỗi</li>
+                            <li><i class="fa-solid fa-snowflake"></i>Hỗi trợ 24/7 qua hotline</li>
+                        </ul>
+                    </div>
+                    <div class="colSpace" style="width: 1px;height: 100%;background-color: #E4E7E9;"></div>
+                    <div class="desc-shipper">
+                        <h3 style="text-transform: uppercase;">Thông tin vận chuyển</h3>
+                        <ul>
+                            <li><strong>Thời gian:</strong> 2-4 ngày, Free ship</li>
+                            <li><strong>Giao hàng nhanh: </strong>trong ngày, phí: 70.000đ</li>
+                            <li><strong>Giao hàng hỏa tốc: </strong>2-4h nội thành, phí: 150.000đ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div data-value="1" class="itemDesc config-infomation">
+                    <p>Thông tin cấu hình</p>
+                    <ul class="listCofig">
+                        <li class="itemConfig">Loại màn hình: <strong>Phẳng</strong></li>
+                        <li class="itemConfig">Kích thước màn hình: <strong>24 inch</strong></li>
+                        <li class="itemConfig">Độ phân giải: <strong>Full HD (1920 x 1080)</strong></li>
+                        <li class="itemConfig">Công suất tiêu thụ điện: <strong>27.5 W</strong></li>
+                        <li class="itemConfig">Kích thước: <strong>Ngang 539 mm - Cao 388.46 ~ 518.46 mm - Dày
+                                21mm</strong></li>
+                    </ul>
+                </div>
+                <div data-value="2" class="itemDesc review-content">
+                    <div class="inputCommentMe">
+                        <h3>Nhập bình luận của bạn</h3>
+                        <form action="#" class="cmtMe" id="commentt">
+                            <textarea name="contentCmt" id="contentCmt" cols="40" rows="10" style="resize: none;"
+                                placeholder="Nội dung bình luận..." required>
+
+                            </textarea>
+                            <div class="rating-container" id="ratingContainer">
+                                <div class="rating-stars" id="ratingStars">
+                                    <span class="star" data-value="1">&#9733;</span>
+                                    <span class="star" data-value="2">&#9733;</span>
+                                    <span class="star" data-value="3">&#9733;</span>
+                                    <span class="star" data-value="4">&#9733;</span>
+                                    <span class="star" data-value="5">&#9733;</span>
+                                </div>
+                                <p id="selectedRating" data-result="">Selected rating: 0</p>
+                            </div>
+                            <button type="submit" name="btn-cmt" class="btn-cmt">Bình luận</button>
+                        </form>
+                    </div>
+                    <div class="hrSpace" style="width: 100%;height: 2px;background-color: #E4E7E9;"></div>
+                    <div class="showCmt">
+                        <h3>Phản hồi của người dùng</h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- !FOOTER PAGE -->
+        <div class="footer">
+
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="../template.js"></script>
+    <script src="../utils.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

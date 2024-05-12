@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Giỏ hàng</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="navigation"></div>
+
+			<!-- !CONTENT---------------- -->
+			<div class="body-page">
+				<h2 style="margin-bottom: 20px">GIỎ HÀNG CỦA TÔI</h2>
+				<div class="modal-body">
+					<div class="cart-row">
+						<span class="cart-item cart-header cart-column"
+							>Sản Phẩm</span
+						>
+						<span class="cart-price cart-header cart-column"
+							>Giá</span
+						>
+						<span class="cart-quantity cart-header cart-column"
+							>Số Lượng</span
+						>
+					</div>
+					<div class="cart-items">
+						<div class="noresult">
+							Không tìm thấy sản phẩm nào !
+						</div>
+					</div>
+					<div class="cart-final">
+						<div class="directCart">
+							<button
+								onclick="window.location.href='../Shop/index.html'"
+								class="btn1 btn-back"
+							>
+								Trở lại shop
+							</button>
+							<button class="btn1 btn-upcost">
+								Cập nhật đơn hàng
+							</button>
+						</div>
+						<div class="cart-total">
+							<h2
+								style="
+									text-transform: uppercase;
+									padding: 10px 0px;
+									border-bottom: 1px solid #e4e7e9;
+								"
+							>
+								Tổng thanh toán
+							</h2>
+							<div class="total-cost">
+								<strong class="cart-total-title"
+									>Tổng đơn hàng:</strong
+								>
+								<span class="cart-total-price"></span>
+							</div>
+							<div class="applyShip">
+								<label for="title-ship"
+									>Phí ship là (đ):
+								</label>
+								<input
+									type="number"
+									placeholder="Tiền vận chuyển..."
+									id="title-ship"
+								/>
+							</div>
+							<div class="applyDiscount">
+								<label for="title-dis">Khuyến mãi(%): </label>
+								<input
+									type="number"
+									inputmode="numeric"
+									pattern="[0-9]*"
+									placeholder="% khuyến mãi..."
+									id="title-dis"
+								/>
+							</div>
+							<div class="total">
+								<strong
+									class="title-pay"
+									style="text-transform: uppercase"
+									>Tổng tiền thanh toán:
+								</strong>
+								<span class="total-pay"></span>
+							</div>
+							<button class="btn1 btn-pay">
+								Thanh toán ngay
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- !FOOTER PAGE -->
+			<div class="footer"></div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+		<script src="../template.js"></script>
+		<script src="../utils.js"></script>
+		<script src="./script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Edit Information</title>
+</head>
+
+<body>
+    <div class="navbar-brand h3 d-flex justify-content-center text-primary">Cập nhật thông tin cá nhân</div>
+    <div class="container bg-light p-3 position-relative" style="max-width: 500px">
+        <form method="post" action="editInformation.php">
+            <div class="mb-3">
+                <label class="form-label">Họ và tên</label>
+                <input type="text" class="form-control" name="lastName" value="<?php echo $view_lastName ?>"
+                    placeholder="Last Name">
+            </div>
+            <!-- Email -->
+            <div class="mb-3">
+                <label class="form-label" for="email">Email address</label>
+                <input type="email" class="form-control" name="email" value="<?php echo $view_email ?>"
+                    placeholder="Email" aria-describedby="emailHelp">
+            </div>
+            <!-- Password & Phone number -->
+            <div class="mb-5">
+                <label for="password">Mật khẩu</label>
+                <input type="password" name="password" id="password" class="form-control"
+                    value="<?php echo $view_password?>" />
+            </div>
+            <input class="btn btn-primary position-absolute bottom-0 start-50 translate-middle" type="submit"
+                name="submit" value="Lưu thay đổi">
+        </form>
+
+    </div>
+</body>
+
+</html>
